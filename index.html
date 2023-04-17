@@ -71,9 +71,19 @@
 
       const letrasMaiusculas = () => {
         let maiuscula = document.getElementsByTagName('p')[0];
-        maiuscula.innerHTML = maiuscula.innerHTML.toLocaleUpperCase;
+        maiuscula.innerHTML = maiuscula.innerHTML.toLocaleUpperCase();
       }
       letrasMaiusculas();
+
+      const exibirTags = () => {
+        let paragrafos = document.getElementsByTagName('p');
+        let palavras = '';
+        for (let index = 0; index < paragrafos.length - 1; index += 1) {
+          palavras += paragrafos[index].innerText + ' ';
+        }
+        paragrafos[3].innerText = palavras
+      }
+      exibirTags();
     </script>
   </body>
 </html>
