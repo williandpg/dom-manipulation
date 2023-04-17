@@ -45,7 +45,11 @@
       <p>Último parágrafo.</p>
     </footer>
     <script>
-      // Seu código aqui
+      function mudarTexto() {
+        let paragrafo = document.getElementsByTagName('p')[1];
+        paragrafo.innerHTML = 'Trabalhando em uma empresa do exterior';
+      };
+      mudarTexto();
     </script>
   </body>
 </html>
